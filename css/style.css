@@ -1,6 +1,9 @@
-body {
+body{
   background-color: white;
 }
+
+
+
 
 #menu-container img
 {
@@ -8,6 +11,10 @@ body {
 	height: 400px;
 }
 
+#menu-container > h1 ,h2
+{
+  text-align: center;
+}
 .menu ul 
 {
   list-style-type: none;
@@ -20,7 +27,7 @@ body {
 .menu li 
 {
   float: left;
-  width: 24%;
+  width: 25%;
 }
 
 .menu li a 
@@ -35,7 +42,17 @@ body {
 
 .menu li a:hover 
 {
-  background-color: #111;
+  background-color: #2699FB;
+}
+
+.video
+{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
 }
 
 #contact input , label 
@@ -57,7 +74,14 @@ body {
 }
 
 
-
+.copyright
+{
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  margin: 0px;
+}
 
 
 
