@@ -1,8 +1,11 @@
 body{
   background-color: #FFF;
   margin: auto;
- 
+}
 
+h2
+{
+  color: #444;
 }
 
 section 
@@ -181,12 +184,15 @@ section
 {
   text-align: center;
 }
-
+#home p
+{
+  width: 75%;
+}
 
 #homeAside img
 {
   display: block;
-  width: 220px;
+  margin-bottom: 10px;
 }
 
 
@@ -202,10 +208,15 @@ section
 
 
 
-#contact input , label 
+#contact input ,#contact label 
 {
   display: block;
   clear: left;
+}
+
+#contact h1
+{
+  padding: 20px 0px 20px 0px;
 }
 
 .cookie
@@ -228,7 +239,7 @@ section
      width: 960px;
   }
 
-  .headerFotoTablet , .headerFotoMobile, .hamburger
+  .headerFotoTablet , .headerFotoMobile, #menu > label
   {
     display: none;
   }
@@ -249,7 +260,7 @@ section
     margin: auto;
   }
 
-    .headerFotoPc , .headerFotoMobile
+    .headerFotoPc , .headerFotoMobile, #menu > label
   {
     display: none;
   }
@@ -262,7 +273,7 @@ section
     background-color: green;
   }
 
-    .headerFotoTablet , .headerFotoPc
+    .headerFotoTablet , .headerFotoPc , #menu > ul
   {
     display: none;
   }
