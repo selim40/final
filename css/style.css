@@ -1,51 +1,14 @@
 body{
-  background-color: white;
+  background-color: #FFF;
   margin-left: 100px;
   margin-right: 100px;
 
 }
 
-
-
-
-#menu-container img
+section 
 {
-	width: 100%;
-	height: 400px;
-}
-
-#menu-container > h1 ,h2
-{
-  text-align: center;
-}
-.menu ul 
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-.menu li 
-{
-  float: left;
-  width: 25%;
-}
-
-.menu li a 
-{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-.menu li a:hover 
-{
-  background-color: #2699FB;
+  background-color:#FFF;
+  margin-top: 100px;
 }
 
 .video
@@ -59,42 +22,180 @@ body{
   opacity: 0.1;
 }
 
-/*.homeArticle
+#menu-container
 {
-  width: 50%;
+  grid-area: menu-containerTag;
+}
+#menu
+{
+  grid-area: menuTag; 
+}
+.headerFoto
+{
+  grid-area: headerFotoTag;
+}
+
+#menu-container
+{
+  display: grid;
+  grid-template-areas: 
+  "headerFotoTag"
+  "menuTag";
+}
+
+
+#home
+{
+  grid-area: homeTag;
+}
+
+
+#homeHeader 
+{
+  grid-area: homeHeaderTag;
+}
+#homeArticle 
+{
+  grid-area: homeArticleTag;
+}
+#homeAside 
+{
+  grid-area: homeAsideTag;
+}
+
+#homeFooter
+{
+  grid-area: homeFooterTag; 
+}
+#home
+{
+  grid-area: homeTag; 
+}
+
+#home
+{
+  display: grid;
+  grid-template-areas: 
+  "homeHeaderTag homeHeaderTag"
+  "homeArticleTag homeAsideTag" 
+  "homeFooterTag homeFooterTag";
+  
+}
+
+
+
+#buurt
+{
+  grid-area: buurtTag; 
+}
+
+#buurtHeader
+{
+  grid-area: buurtHeaderTag; 
+}
+
+#buurtArticle
+{
+  grid-area: buurtArticleTag; 
+}
+
+#buurtFooter
+{
+  grid-area: buurtFooterTag; 
+}
+
+
+#buurt
+{
+  display: grid;
+  grid-template-areas: 
+  "buurtHeaderTag"
+  "buurtArticleTag"
+  "buurtFooterTag";
+}
+
+
+
+#sport
+{
+  grid-area: sportTag;
+}
+
+#sportArticle
+{
+  grid-area: sportArticleTag;
+}
+
+#sportFooter
+{
+  grid-area: sportFooterTag;
+}
+
+#sport
+{
+  display: grid;
+  grid-template-areas: 
+  "sportArticleTag"
+  "sportFooterTag";
+}
+
+
+
+
+
+
+
+
+#menu ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+#menu li 
+{
   float: left;
+  width: 25%;
 }
 
-.homeAside
+#menu li a 
 {
-  width: 49%;
-  float: right;
-}*/
-
-.homeAside img
-{
- /* display: block;*/
-  width: 100px;
+  display: block;
+  color: #AAA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 
-#contact input , label 
+#menu li a:hover 
 {
-	display: block;
-	clear: left;
+  background-color: #2699FB;
+  color: #FFF;
 }
 
-.cookie
+#menu-container img
 {
-	margin-top: 20px;
-	border-style: solid;
-	position: fixed;
-	bottom: 0;
-	right: 1;
-	width: 99%;
-	text-align: center;
-	z-index: 1;
+  width: 100%;
+  height: 400px;
 }
+
+#menu-container h1 ,h2
+{
+  text-align: center;
+}
+
+
+#homeAside img
+{
+  display: block;
+  width: 220px;
+}
+
 
 
 .copyright
@@ -103,9 +204,8 @@ body{
   text-align: center;
   background-color: #333;
   color: white;
-  margin: 0px;
+  margin-top: 50px;
 }
-
 
 
 

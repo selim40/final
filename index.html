@@ -13,64 +13,69 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body id="grid-container">
 <section class="videoFullScreen">
 	<video autoplay loop muted class="video">
 		<source src="stad.mp4" type="video/mp4">
 	</video>
 </section>
 	<header id="menu-container">
-		<img src="img/purmerend.jpg">
+		<img class="headerFoto" src="img/purmerend.jpg">
+		
+		<nav id="menu">
 		<h1>Purmerend</h1>
 		<h2>Purmerend Waterlands Goed!</h2>
-		<nav class="menu">
 			<ul>
 				<li><a href="#home">Purmerend</a></li>
 				<li><a href="#buurt">Purmer-Zuid</a></li>
 				<li><a href="#sport">Sport</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+
 		</nav>
 	</header>
+
 	<section id="home">	
-		<article class="homeArticle">
-			<header>
-				<h1>Purmerend</h1>
-			</header>
+		<header id="homeHeader">
+			<h1>Purmerend</h1>
+		</header>
+		<article id="homeArticle">
+
 			hier komt een tekst over purmerend
 			<p>allinias en zoallinias en zoallinias en zo</p>
 			<p>allinias en zoallinias en zoallinias en zo</p>
-			<aside class="homeAside">
-				<img src="img/koemarkt.jpg" class="koemarkt">
-				<img src="img/koemarkt2.jpg" class="koemarkt">
-		</aside>
+
 		</article>
+		<aside id="homeAside">
+			<img src="img/koemarkt.jpg" class="koemarkt">
+			<img src="img/koemarkt2.jpg" class="koemarkt">
+		</aside>
 
 
 		
-		<footer>footer van purmerend</footer>
+		<footer id="homeFooter" class="copyright">&copy; Selim Oruc 2019</footer>
 	</section>
 
 
 
-	<!-- <section id="buurt">
-		<header>
+	<section id="buurt">
+		<header id="buurtHeader">
 			<h1>dit gaat over purmerzuid</h1>
 		</header>
 		
-		<article>
+		<article id="buurtArticle">
 			hier is een article over purmerzuid
 			<p>dit is een allinia</p>
 			<p>dit ook</p>
 		</article>
-		<footer>vergeet de footer niet</footer>
+		<footer id="buurtFooter" class="copyright">&copy; Selim Oruc 2019</footer>
 	</section>
 
 
 
 	<section id="sport">
-		<h1>Sport</h1>
-		<article>
+		<article id="sportArticle">
+			<h1>Sport</h1>
 			hier komt een stukje over sport 
 			wat je allemaal in purmerend kan doen
 			een lijst met 10 sports in purmerend
@@ -81,7 +86,7 @@
 			<p></p>
 			<p></p>
 		</article>
-		<footer></footer>
+		<footer id="sportFooter" class="copyright">&copy; Selim Oruc 2019</footer>
 	</section>
 
 
@@ -101,13 +106,13 @@
 
 		<footer></footer>
 	</section>
- -->
+
 	<!-- reden voor 2 footers is eigenlijk dat cookie moet verdwijnen  na
 	klik button -->
-	<footer class="copyright">
+<!-- 	<footer class="copyright">
 		&copy; Selim Oruc 2019
 	</footer>
-<!-- 	<footer class="cookie">
+	<footer class="cookie">
 		<span>Deze site maakt gebruik van cookies.</span>
 		<button name="cookieAccept">Accepteer cookies</button>
 	</footer> -->
