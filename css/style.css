@@ -3,6 +3,8 @@ body{
   margin: auto;
 }
 
+
+
 h2
 {
   color: #444;
@@ -131,12 +133,125 @@ section
   grid-area: sportFooterTag;
 }
 
+
+#articleRoeien
+{
+  grid-area: articleRoeienTag;
+}
+
+#asideRoeien
+{
+  grid-area: asideRoeienTag;
+}
+
+#articleBreakdance
+{
+  grid-area: articleBreakdanceTag;
+}
+
+#asideBreakdance
+{
+  grid-area: asideBreakdanceTag
+}
+
+#articleBasketbal
+{
+  grid-area: articleBasketbalTag;
+}
+
+#asideBasketbal
+{
+  grid-area: asideBasketbalTag
+}
+
+#articleHandbal
+{
+  grid-area: articleHandbalTag;
+}
+
+#asideHandbal
+{
+  grid-area: asideHandbalTag
+}
+
+#articleHockey
+{
+  grid-area: articleHockeyTag;
+}
+
+#asideHockey
+{
+  grid-area: asideHockeyTag
+}
+
+#articleKarate
+{
+  grid-area: articleKarateTag;
+}
+
+#asideKarate
+{
+  grid-area: asideKarateTag
+}
+
+#articleKorfbal
+{
+  grid-area: articleKorfbalTag;
+}
+
+#asideKorfbal
+{
+  grid-area: asideKorfbalTag
+}
+
+#articleRugby
+{
+  grid-area: articleRugbyTag;
+}
+
+#asideRugby
+{
+  grid-area: asideRugbyTag
+}
+
+#articleVolleybal
+{
+  grid-area: articleVolleybalTag;
+}
+
+#asideVolleybal
+{
+  grid-area: asideVolleybalTag;
+}
+
+
+#articleTurnen
+{
+  grid-area: articleTurnenTag;
+}
+
+#asideTurnen
+{
+  grid-area: asideTurnenTag;
+}
+
+
 #sport
 {
   display: grid;
   grid-template-areas: 
-  "sportArticleTag"
-  "sportFooterTag";
+  "sportArticleTag          sportArticleTag "
+  "articleRoeienTag         asideRoeienTag"
+  "articleBreakdanceTag     asideBreakdanceTag"
+  "articleBasketbalTag      asideBasketbalTag"
+  "articleHandbalTag        asideHandbalTag"
+  "articleHockeyTag         asideHockeyTag"
+  "articleKarateTag         asideKarateTag"
+  "articleKorfbalTag        asideKorfbalTag"
+  "articleRugbyTag          asideRugbyTag"
+  "articleVolleybalTag      asideVolleybalTag"
+  "articleTurnenTag         asideTurnenTag"
+  "sportFooterTag           sportFooterTag ";
 }
 
 
@@ -156,11 +271,6 @@ section
 }
 
 
-#menu li 
-{
-  float: left;
-  width: 25%;
-}
 
 #menu li a 
 {
@@ -176,6 +286,7 @@ section
 {
   background-color: #2699FB;
   color: #FFF;
+  height: auto;
 }
 
 
@@ -188,6 +299,7 @@ section
 {
   width: 75%;
 }
+
 
 #homeAside img
 {
@@ -243,6 +355,29 @@ section
   {
     display: none;
   }
+
+  #home header, article
+  {
+    padding-left: 10px;
+  }
+
+  #menu aside
+  {
+    padding-right: 10px; 
+  }
+
+  #hamburger, label
+  {
+    display : none;
+  }
+
+  #menu li 
+  {
+    float: left;
+    width: 25%;
+  }
+
+
 }
 
 /*tablet*/
@@ -264,6 +399,20 @@ section
   {
     display: none;
   }
+
+
+   #hamburger, label
+  {
+    display : none;
+  }
+
+  #menu li 
+  {
+    float: left;
+    width: 25%;
+  }
+
+ 
 }
 
 /*mobile*/
@@ -273,8 +422,23 @@ section
     background-color: green;
   }
 
-    .headerFotoTablet , .headerFotoPc , #menu > ul
+  .headerFotoTablet , .headerFotoPc , #menu > ul
   {
     display: none;
+  }
+   #hamburger
+  {
+    display : none;
+  }
+
+  #menu label 
+  {
+    cursor : pointer;
+    font-size: 40px;
+  }
+ 
+    #hamburger:checked + #hamburgerNav
+  {
+    display : block;
   }
 }
