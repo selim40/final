@@ -116,7 +116,10 @@ section
   "buurtFooterTag";
 }
 
-
+ #buurt header, article
+  {
+    padding-left: 10px;
+  }
 
 #sport
 {
@@ -240,18 +243,18 @@ section
 {
   display: grid;
   grid-template-areas: 
-  "sportArticleTag          sportArticleTag "
-  "articleRoeienTag         asideRoeienTag"
-  "articleBreakdanceTag     asideBreakdanceTag"
-  "articleBasketbalTag      asideBasketbalTag"
-  "articleHandbalTag        asideHandbalTag"
-  "articleHockeyTag         asideHockeyTag"
-  "articleKarateTag         asideKarateTag"
-  "articleKorfbalTag        asideKorfbalTag"
-  "articleRugbyTag          asideRugbyTag"
-  "articleVolleybalTag      asideVolleybalTag"
-  "articleTurnenTag         asideTurnenTag"
-  "sportFooterTag           sportFooterTag ";
+  "sportArticleTag            sportArticleTag           sportArticleTag "
+  "articleRoeienTag           articleRoeienTag           asideRoeienTag"
+  "articleBreakdanceTag       articleBreakdanceTag       asideBreakdanceTag"
+  "articleBasketbalTag        articleBasketbalTag        asideBasketbalTag"
+  "articleHandbalTag          articleHandbalTag          asideHandbalTag"
+  "articleHockeyTag           articleHockeyTag           asideHockeyTag"
+  "articleKarateTag           articleKarateTag           asideKarateTag"
+  "articleKorfbalTag          articleKorfbalTag          asideKorfbalTag"
+  "articleRugbyTag            articleRugbyTag            asideRugbyTag"
+  "articleVolleybalTag        articleVolleybalTag        asideVolleybalTag"
+  "articleTurnenTag           articleTurnenTag           asideTurnenTag"
+  "sportFooterTag             sportFooterTag             sportFooterTag ";
 }
 
 
@@ -328,7 +331,12 @@ section
 
 #contact h1
 {
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px 20px 10px;
+}
+
+#contact fieldset
+{
+  margin-left:10px;
 }
 
 .cookie
@@ -343,6 +351,8 @@ section
 }
 
 
+
+
 /*pc*/
 @media screen and (min-width : 960px)
 {
@@ -351,7 +361,10 @@ section
      width: 960px;
   }
 
-  .headerFotoTablet , .headerFotoMobile, #menu > label
+
+
+
+  .headerFotoTablet , .headerFotoMobile, .mobile , .tablet , #menu > label
   {
     display: none;
   }
@@ -395,7 +408,7 @@ section
     margin: auto;
   }
 
-    .headerFotoPc , .headerFotoMobile, #menu > label
+    .headerFotoPc , .headerFotoMobile, .pc , .mobile, #menu > label
   {
     display: none;
   }
@@ -422,7 +435,7 @@ section
     background-color: green;
   }
 
-  .headerFotoTablet , .headerFotoPc , #menu > ul
+  .headerFotoTablet , .headerFotoPc , .pc, .tablet, #menu > ul
   {
     display: none;
   }
