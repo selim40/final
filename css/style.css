@@ -1,14 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Muli|Roboto|Raleway|Noto+Serif');
+
 body{
   background-color: #FFF;
   margin: auto;
+  font-family: 'Roboto , Playfair Display, Muli' ;
+
 }
 
+h4
+{
+  font-family: ' Noto Serif, Playfair Display , Raleway ' ;
+  font-size: 15px
+}
 
+h5
+{
+  font-family: 'Roboto , Raleway, Noto Serif' ;
+  font-size: 12px
+}
+
+legend
+{
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+}
 
 h2
 {
   color: #444;
 }
+
+
 
 section 
 {
@@ -16,6 +39,10 @@ section
   margin-top: 100px;
 }
 
+#menu h1
+{
+ font-family: 'Muli'
+}
 .video
 {
   position: fixed;
@@ -76,14 +103,6 @@ section
   grid-area: homeTag; 
 }
 
-#home
-{
-  display: grid;
-  grid-template-areas: 
-  "homeHeaderTag homeHeaderTag"
-  "homeArticleTag homeAsideTag" 
-  "homeFooterTag homeFooterTag";  
-}
 
 
 #buurt
@@ -124,6 +143,11 @@ section
 #sport
 {
   grid-area: sportTag;
+}
+
+#sportHeader
+{
+  grid-area: sportHeaderTag;
 }
 
 #sportArticle
@@ -228,40 +252,67 @@ section
 }
 
 
-#articleTurnen
+#articleJitsu
 {
-  grid-area: articleTurnenTag;
+  grid-area: articleJitsuTag;
 }
 
-#asideTurnen
+#asideJitsu
 {
-  grid-area: asideTurnenTag;
+  grid-area: asideJitsuTag;
 }
 
 
-#sport
+
+
+
+#sportArticle
+{
+  margin-bottom: 10px;
+}
+
+#sport header, article
+{
+   padding-left: 10px;
+}
+
+#sport article
+{
+  width: 75%;
+}
+
+#refferal
+{
+  grid-area: refferalTag;
+}
+
+#refferalHeader
+{
+  grid-area: refferalHeaderTag;
+}
+
+#refferalArticle
+{
+  grid-area: refferalArticleTag;
+}
+
+#refferalFooter
+{
+  grid-area: refferalFooterTag;
+}
+#refferalAside
+{
+  grid-area: refferalAsideTag;
+}
+
+#refferal
 {
   display: grid;
   grid-template-areas: 
-  "sportArticleTag            sportArticleTag           sportArticleTag "
-  "articleRoeienTag           articleRoeienTag           asideRoeienTag"
-  "articleBreakdanceTag       articleBreakdanceTag       asideBreakdanceTag"
-  "articleBasketbalTag        articleBasketbalTag        asideBasketbalTag"
-  "articleHandbalTag          articleHandbalTag          asideHandbalTag"
-  "articleHockeyTag           articleHockeyTag           asideHockeyTag"
-  "articleKarateTag           articleKarateTag           asideKarateTag"
-  "articleKorfbalTag          articleKorfbalTag          asideKorfbalTag"
-  "articleRugbyTag            articleRugbyTag            asideRugbyTag"
-  "articleVolleybalTag        articleVolleybalTag        asideVolleybalTag"
-  "articleTurnenTag           articleTurnenTag           asideTurnenTag"
-  "sportFooterTag             sportFooterTag             sportFooterTag ";
+  "refferalHeaderTag    refferalHeaderTag    refferalHeaderTag"
+  "refferalArticleTag   refferalArticleTag   refferalAsideTag"
+  "refferalFooterTag    refferalFooterTag    refferalFooterTag"
 }
-
-
-
-
-
-
 
 
 #menu ul 
@@ -317,7 +368,7 @@ section
   width: 100%;
   text-align: center;
   background-color: #333;
-  color: white;
+  color: #F5F5F5;
   margin-top: 50px;
 }
 
@@ -357,11 +408,37 @@ section
 @media screen and (min-width : 960px)
 {
   body{
-    background-color: red;
      width: 960px;
   }
 
 
+  #home
+  {
+    display: grid;
+    grid-template-areas: 
+    "homeHeaderTag homeHeaderTag"
+    "homeArticleTag homeAsideTag" 
+    "homeFooterTag homeFooterTag";  
+  }
+
+  #sport
+{
+  display: grid;
+  grid-template-areas: 
+  "sportHeaderTag             sportHeaderTag             sportHeaderTag"
+  "sportArticleTag            sportArticleTag            sportArticleTag "
+  "articleRoeienTag           articleRoeienTag           asideRoeienTag"
+  "articleBreakdanceTag       articleBreakdanceTag       asideBreakdanceTag"
+  "articleBasketbalTag        articleBasketbalTag        asideBasketbalTag"
+  "articleHandbalTag          articleHandbalTag          asideHandbalTag"
+  "articleHockeyTag           articleHockeyTag           asideHockeyTag"
+  "articleKarateTag           articleKarateTag           asideKarateTag"
+  "articleKorfbalTag          articleKorfbalTag          asideKorfbalTag"
+  "articleRugbyTag            articleRugbyTag            asideRugbyTag"
+  "articleVolleybalTag        articleVolleybalTag        asideVolleybalTag"
+  "articleJitsuTag           articleJitsuTag           asideJitsuTag"
+  "sportFooterTag             sportFooterTag             sportFooterTag ";
+}
 
 
   .headerFotoTablet , .headerFotoMobile, .mobile , .tablet , #menu > label
@@ -397,11 +474,42 @@ section
 @media screen and (min-width : 400px) and (max-width : 959px)
 {
   body{
-    background-color: yellow;
     min-width: 400px;
     max-width: 959px;
-
   }
+
+textarea {
+ 
+    width: 26em;
+}
+
+  #home
+  {
+    display: grid;
+    grid-template-areas: 
+    "homeHeaderTag homeHeaderTag"
+    "homeArticleTag homeAsideTag" 
+    "homeFooterTag homeFooterTag";  
+  }
+
+  #sport
+{
+  display: grid;
+  grid-template-areas: 
+  "sportHeaderTag             sportHeaderTag             sportHeaderTag"
+  "sportArticleTag            sportArticleTag            sportArticleTag "
+  "articleRoeienTag           articleRoeienTag           asideRoeienTag"
+  "articleBreakdanceTag       articleBreakdanceTag       asideBreakdanceTag"
+  "articleBasketbalTag        articleBasketbalTag        asideBasketbalTag"
+  "articleHandbalTag          articleHandbalTag          asideHandbalTag"
+  "articleHockeyTag           articleHockeyTag           asideHockeyTag"
+  "articleKarateTag           articleKarateTag           asideKarateTag"
+  "articleKorfbalTag          articleKorfbalTag          asideKorfbalTag"
+  "articleRugbyTag            articleRugbyTag            asideRugbyTag"
+  "articleVolleybalTag        articleVolleybalTag        asideVolleybalTag"
+  "articleJitsuTag           articleJitsuTag           asideJitsuTag"
+  "sportFooterTag             sportFooterTag             sportFooterTag ";
+}
 
   .headerFotoTablet 
   {
@@ -430,9 +538,57 @@ section
 
 /*mobile*/
 @media screen and (max-width : 399px)
- {
-  body{
-    background-color: green;
+{
+
+  textarea 
+  {
+
+    width: 24em;
+  }
+
+    #home
+  {
+    display: grid;
+    grid-template-areas: 
+    "homeHeaderTag"
+    "homeArticleTag"
+    "homeAsideTag" 
+    "homeFooterTag";  
+  }
+
+    #sport
+  {
+    display: grid;
+    grid-template-areas: 
+    "sportHeaderTag"
+    "sportArticleTag"
+    "articleRoeienTag"
+    "asideRoeienTag"
+    "articleBreakdanceTag"
+    "asideBreakdanceTag"
+    "articleBasketbalTag"
+    "asideBasketbalTag"
+    "articleHandbalTag"
+    "asideHandbalTag"
+    "articleHockeyTag"
+    "asideHockeyTag"
+    "articleKarateTag"
+    "asideKarateTag"
+    "articleKorfbalTag"
+    "asideKorfbalTag"
+    "articleRugbyTag"
+    "asideRugbyTag"
+    "articleVolleybalTag"
+    "asideVolleybalTag"
+    "articleJitsuTag"
+    "asideJitsuTag"
+    "sportFooterTag";
+  }
+
+  #sport img
+  {
+    padding-left: 10px;
+    padding-bottom: 50px; 
   }
 
   .headerFotoTablet , .headerFotoPc , .pc, .tablet, #menu > ul
@@ -449,7 +605,7 @@ section
     cursor : pointer;
     font-size: 40px;
   }
- 
+
     #hamburger:checked + #hamburgerNav
   {
     display : block;
