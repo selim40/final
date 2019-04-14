@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /forbidden
+
+
+http://kron-gracie.com/565411/sitemap.xml

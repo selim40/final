@@ -7,6 +7,17 @@ body{
 
 }
 
+
+@font-face {
+  font-family: selim; 
+  src: url(../fonts/dosis.ttf);
+}
+
+h6
+{
+  font-family: 'selim';
+}
+
 h4
 {
   font-family: ' Noto Serif, Playfair Display , Raleway ' ;
@@ -30,7 +41,6 @@ h2
 {
   color: #444;
 }
-
 
 
 section 
