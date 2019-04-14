@@ -1,7 +1,6 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://kron-gracie.com/565411/sitemap.xml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
    <url>
 
@@ -11,8 +10,56 @@
 
       <changefreq>monthly</changefreq>
 
-      <priority>0.8</priority>
+      <priority>0.1</priority>
 
    </url>
+   <url>
+
+      <loc>http://kron-gracie.com/565411/#home</loc>
+
+      <lastmod>2019-04-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.2</priority>
+
+   </url>
+   <url>
+
+      <loc>http://kron-gracie.com/565411/#buurt</loc>
+
+      <lastmod>2019-04-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.3</priority>
+
+   </url>
+   <url>
+
+      <loc>http://kron-gracie.com/565411/#sport</loc>
+
+      <lastmod>2019-04-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.4</priority>
+
+   </url>
+   <url>
+
+      <loc>http://kron-gracie.com/565411/#contact</loc>
+
+      <lastmod>2019-04-14</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>   
+
+
+
+
 
 </urlset> 
